@@ -1,0 +1,25 @@
+.model_bcakdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.model {
+  background-color: white;
+  max-width: 500px;
+  margin: 200px auto;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.model h1 {
+  margin: 20px;
+}
+.model_bcakdrop .border-red {
+  border: 2px solid red;
+}
+.model_bcakdrop .border-blue {
+  border: 2px solid blue;
+}

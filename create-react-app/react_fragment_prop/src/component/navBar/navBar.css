@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+.container {
+  display: flex;
+  background-color: yellow;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 0 100px;
+}
+.container ul {
+  display: flex;
+}
+
+.container li {
+  list-style-type: none;
+  margin: 0px 20px;
+}

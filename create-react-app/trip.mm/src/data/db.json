@@ -1,0 +1,28 @@
+{
+  "trips": [
+    {
+      "name": "2 day trivel in Chaung Tha",
+      "price": 100000,
+      "id": 1,
+      "location": "Myanmar"
+    },
+    {
+      "name": "3 day trivel in Ngw Saung",
+      "price": 300000,
+      "id": 2,
+      "location": "Myanmar"
+    },
+    {
+      "name": "2 day trivel in Taunggyi",
+      "price": 100000,
+      "id": 3,
+      "location": "Myanmar"
+    },
+    {
+      "name": "2 day trivel in Bangkok",
+      "price": 700000,
+      "id": 4,
+      "location": "Thailand"
+    }
+  ]
+}

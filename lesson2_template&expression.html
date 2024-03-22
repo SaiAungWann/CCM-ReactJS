@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+    <!-- React Cdn -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- babel cdn -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <div id="main"></div>
+
+    <footer>Footer</footer>
+  </body>
+  <script type="text/babel">
+    const Main = () => {
+      let name = "hlaing min than";
+      let number = 20;
+      let className = "change-class";
+      let clickAlert = () => {
+        alert("Hello");
+      };
+      return (
+        //this is main section
+        // tamplete expressin is {} in JSX code that can use for variable or other data to work directly in html
+        <div className={className}>
+          Hello World this is main tag
+          <span>hi there</span>
+          <h1>{name.toUpperCase()}</h1>
+          <p>{number}</p>
+          <p>{new Date().toDateString()}</p>
+          <button onClick={clickAlert}>click me</button>
+        </div>
+        // button's click function can also use
+        // <button onClick={(e) => {console.log(e);}}>click me</button>
+      );
+    };
+    let rootContainer = document.getElementById("main");
+    //create react element
+    let e = React.createElement;
+    //create react root element
+    let root = ReactDOM.createRoot(rootContainer);
+    //render the react root
+    root.render(e(Main));
+  </script>
+</html>
